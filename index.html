@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सिद्धार्थनगर की सच्ची ख़बर</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800">
+  <!-- हेडर -->
+  <header class="bg-red-700 text-white text-center py-4 shadow-md">
+    <h1 class="text-2xl font-bold tracking-wide">सिद्धार्थनगर की सच्ची ख़बर</h1>
+    <p class="text-xs text-red-100 mt-1">॥ सत्य, निष्पक्ष और बेबाक आवाज़ ॥ जिला: UP-55</p>
+  </header>
+
+  <!-- ब्रेकिंग पट्टी -->
+  <div class="bg-black text-yellow-400 text-xs py-1.5 px-3 flex items-center overflow-hidden">
+    <span class="bg-red-600 text-white px-2 py-0.5 rounded font-bold mr-2 text-[10px]">ब्रेकिंग</span>
+    <marquee>कपिलवस्तु में अंतरराष्ट्रीय बौद्ध केंद्र का निर्माण कार्य तेज • बांसी में कालानमक चावल की नई किस्म को मिली मंजूरी</marquee>
+  </div>
+
+  <!-- मुख्य समाचार सूची -->
+  <main class="max-w-md mx-auto p-3 space-y-4">
+    <!-- खबर 1 -->
+    <div class="bg-white rounded-lg shadow p-3 border-l-4 border-red-600">
+      <span class="text-xs font-semibold text-red-600">नौगढ़ (मुख्यालय)</span>
+      <h2 class="font-bold text-base mt-1">स्टेडियम का आधुनिकीकरण: 17 करोड़ की लागत से बनेगा सिंथेटिक ट्रैक</h2>
+      <p class="text-xs text-gray-600 mt-1">सिद्धार्थनगर के युवाओं और खिलाड़ियों के लिए अंतरराष्ट्रीय स्तर की खेल सुविधाएं जल्द उपलब्ध होंगी...</p>
+      <div class="mt-3 flex justify-between items-center pt-2 border-t text-xs">
+        <span class="text-gray-400">आज का अपडेट</span>
+        <button onclick="shareNews('स्टेडियम का आधुनिकीकरण: 17 करोड़ की लागत से बनेगा सिंथेटिक ट्रैक')" class="bg-green-600 text-white px-3 py-1 rounded-full font-medium">WhatsApp पर शेयर करें</button>
+      </div>
+    </div>
+
+    <!-- खबर 2 -->
+    <div class="bg-white rounded-lg shadow p-3 border-l-4 border-red-600">
+      <span class="text-xs font-semibold text-red-600">बांसी / डुमरियागंज</span>
+      <h2 class="font-bold text-base mt-1">कालानमक चावल: 1200 किसानों को मिले मुफ्त उन्नत बीज</h2>
+      <p class="text-xs text-gray-600 mt-1">जिले की पहचान 'बुद्ध का महाप्रसाद' कालानमक धान के रकबे को बढ़ाने के लिए कृषि विभाग का बड़ा कदम...</p>
+      <div class="mt-3 flex justify-between items-center pt-2 border-t text-xs">
+        <span class="text-gray-400">विशेष रिपोर्ट</span>
+        <button onclick="shareNews('कालानमक चावल: 1200 किसानों को मिले मुफ्त उन्नत बीज')" class="bg-green-600 text-white px-3 py-1 rounded-full font-medium">WhatsApp पर शेयर करें</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function shareNews(title) {
+      const text = encodeURIComponent("📰 *सिद्धार्थनगर की सच्ची ख़बर*\n\n" + title + "\n\nताज़ा ख़बरें पढ़ने के लिए इस लिंक को खोलें: " + window.location.href);
+      window.open("https://api.whatsapp.com/send?text=" + text, '_blank');
+    }
+  </script>
+</body>
+</html>
